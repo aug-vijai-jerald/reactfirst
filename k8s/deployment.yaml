@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app-test-450006
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: react-app-test-450006
+  template:
+    metadata:
+      labels:
+        app: react-app-test-450006
+    spec:
+      containers:
+        - name: react-app-test-450006
+          image: gcr.io/react-app-test-450006/react-app-test-450006:latest
+          ports:
+            - containerPort: 80
