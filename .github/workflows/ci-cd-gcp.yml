@@ -3,7 +3,7 @@ name: CI/CD Pipeline for React App on GCP
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch
+      - master  # Trigger on pushes to the main branch
 
 jobs:
   build-and-deploy:
