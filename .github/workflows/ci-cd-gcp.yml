@@ -30,12 +30,12 @@ jobs:
       # Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -t gcr.io/react-app-test-450006/reactfirstapp:latest .
+          docker build -t us-docker.pkg.dev/react-app-test-450006/reactfirstapp:latest .
 
       # Push the Docker image to GCR
       - name: Push Docker image to GCR
         run: |
-          docker push gcr.io/react-app-test-450006/reactfirstapp:latest
+          docker push us-docker.pkg.dev/react-app-test-450006/reactfirstapp:latest
 
       # Deploy to GKE
       - name: Deploy to GKE
