@@ -27,7 +27,7 @@ jobs:
         run: |
           gcloud auth configure-docker us-central1-docker.pkg.dev
 
-      # Build the Docker image
+      # Build the Docker imagej
       - name: Build Docker image
         run: |
           docker build -t gcr.io/react-app-test-450006/reactfirstapp:latest .
